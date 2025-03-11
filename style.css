@@ -98,3 +98,31 @@ body{background-color: rgb(255, 252, 239);}
     color: rgb(231, 66, 102);
 }
 
+.bookingform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+
+#form{
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+    
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#form h1{
+    color: blueviolet;
+}

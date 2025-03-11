@@ -4,27 +4,41 @@
         <title>Booking</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body class="bookingform">
+        
+
+        <div  id="form">
         <form>
-            ประเภทกลุ่มทัวร์ : <br>
-            <select  name="type" size="1">
+            <h1 id="title">Booking Form</h1>
+            <label for="sizetour">
+                ประเภทกลุ่มทัวร์ :
+            </label>
+            <select id="sizetour" name="type" size="1">
                 <option value="small">กลุ่มเล็ก(10-15 คน)</option>
                 <option value="basic">กลุ่มมาตรฐาน(35-40 คน)</option>
-
             </select>
             <br><br>
-            <label for="ticket">Join Land</label>
-            <input type="checkbox">
+            <label for="ticket">
+                <input id="ticket" type="checkbox"> Join Land 
+            </label>
+            
             <br><br>
-            <input type="number" placeholder="จำนวนผู้ร่วมเดินทาง"> 
+            <label for="passengers">จำนวนผู้ร่วมเดินทาง (สูงสุด 15 คน) :</label>
+            
+            <input type="number" id="passengers" placeholder="จำนวนผู้ร่วมเดินทาง">
+
             <br><br> 
-            <input type="text" placeholder="ชื่อนามสกุลผู้ติดต่อ">
+            <label for="name">ชื่อ-นามสกุลผู้ติดต่อ :</label>
+            <input id="name" type="text" placeholder="ชื่อ-นามสกุลผู้ติดต่อ">
             <br><br>
-            <input type="tel" placeholder="เบอร์โทรติดต่อ">
+
+            <label for="tel">เบอร์โทรติดต่อ : </label>
+            <input id="tel" type="tel" placeholder="เบอร์โทรติดต่อ">
             <br><br>
             <h1 id="myname1">
                 6733270421 Sitanan Yaowayang
             </h1>
         </form>
+        </div>
     </body>
 </html>
