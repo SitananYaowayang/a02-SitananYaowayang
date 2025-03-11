@@ -3,12 +3,13 @@
     <head>
         <title>Booking</title>
         <link rel="stylesheet" href="style.css">
+        
     </head>
     <body class="bookingform">
         
 
         <div  id="form">
-        <form>
+        <form action="index.html" onsubmit="return valid();">
             <h1 id="title">Booking Form</h1>
             <label for="sizetour">
                 ประเภทกลุ่มทัวร์ :
@@ -35,10 +36,15 @@
             <label for="tel">เบอร์โทรติดต่อ : </label>
             <input id="tel" type="tel" placeholder="เบอร์โทรติดต่อ">
             <br><br>
+            
+            <button type="submit" id="button">ยืนยันการจอง</button>
+        
+        </form>
             <h1 id="myname1">
                 6733270421 Sitanan Yaowayang
             </h1>
-        </form>
         </div>
+
+        <script src="booking.js"></script>
     </body>
 </html>
